@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="Yongama_logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Yongama_logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Yongama_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yongama Yaso Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav class="navbar">
+        <h2 class="logo">Portfolio Website</h2>
+        </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">My Portfolio</p>
+            <h1>Hi, I'm Yongama Yaso</h1>
+            <p>I build modern websites and web apps with clean design, responsive layouts, and strong user experience.</p>
+            <a class="button" href="#projects">Explore projects</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" id="about">
+            <div class="section-header">
+                <span>About Me</span>
+                <h2>Software development with a creative focus</h2>
+            </div>
+            <p>Hello! I'm still currently learning on Software development with experience in HTML, CSS, Python, and responsive front-end design with database too. I enjoy turning ideas into polished websites and project showcases that are easy to use and beautiful to explore but I'm not yet good enough at what a do but I will become the best at what I do and I'm still pursing further to my educational studies to be a qualified Full-Stack Software Developer.</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <span>Projects</span>
+                <h2>Selected work</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>A kitchen website</h3>
+                    <p>Is a kitchen website which shows certain wonderful recipes of various chefs and also learn the biography of how each dish was invented of that specific time and origin.</p>
+                    <a class="card-link" href="The watchman.html">View details</a>
+                </article>
+                <article class="project-card">
+                    <h3>E-commerce website</h3>
+                    <p>An online store prototype with product listings, checkout flow, and mobile-first styling.</p>
+                    <a class="card-link" href="project2.html">View details</a>
+                </article>
+                <article class="project-card">
+                    <h3>Portfolio Showcase</h3>
+                    <p>A project showcase page built to highlight creative work, skills, and contact information.</p>
+                    <a class="card-link" href="project3.html">View details</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <span>Contact</span>
+                <h2>Let's work together</h2>
+            </div>
+            <p>Interested in collaborating or learning more about my work? Send an email and I will get back to you soon.</p>
+            <a class="button button-secondary" href="mailto:yongamayaso02@gmail.com">Email me</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Yongama Yaso. Built with HTML and CSS.
+                Thank you for viewing my website!
+        </p>
+    </footer>
+
+    <script>
+        const navbar = document.querySelector('.navbar');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (navbar) {
+                if (currentScrollY > 80 && currentScrollY > lastScrollY) {
+                    navbar.classList.add('hide');
+                } else {
+                    navbar.classList.remove('hide');
+                }
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    </script>
+</body>
+</html>
